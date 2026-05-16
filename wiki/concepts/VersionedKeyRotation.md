@@ -20,16 +20,16 @@ Versioned Key Rotation is a security pattern for managing encryption keys across
 - **Rotation workflow**: New key in KVM → new version-specific URL → re-encrypt all partner credentials → synchronize to DataHub DB and customer DBs.
 - **Grace period**: ~3 months of overlap during which both old and new key endpoints remain valid, allowing gradual customer synchronization. After grace period, old key endpoint is disabled.
 - **Compromise response**: Rotate key and publish new API immediately → disable old API → re-encrypt credentials → synchronize across customers.
-- **Maintenance effort**: Medium — requires key version management, re-encryption, API version rollout, overlap-period management, and DB synchronization.
+- **Maintenance effort**: Medium - requires key version management, re-encryption, API version rollout, overlap-period management, and DB synchronization.
 - **Security note**: Any caller with a valid client certificate or OAuth2 token can retrieve the raw encryption key; the distribution API must be treated as highly sensitive.
 
 ## Related Links
 
-- [[TokenBroker]] — alternative approach with zero maintenance overhead
-- [[ApigeeKvm]] — Apigee Key Value Maps where the key is stored
-- [[MutualTls]] — one of two authentication options for the key distribution API
-- [[ShipItOAuth2]] — alternative authentication option (preferred)
-- [[ShipIt]] — on-premise system that consumes the key
-- [[RouteFinder]] — uses the encryption key to decrypt partner credentials
-- [[versioned-key-rotation-vs-token-broker]] — source document comparing both approaches
+- [[TokenBroker]] - alternative approach with zero maintenance overhead
+- [[ApigeeKvm]] - Apigee Key Value Maps where the key is stored
+- [[MutualTls]] - one of two authentication options for the key distribution API
+- [[ShipItOAuth2]] - alternative authentication option (preferred)
+- [[ShipIt]] - on-premise system that consumes the key
+- [[RouteFinder]] - uses the encryption key to decrypt partner credentials
+- [[versioned-key-rotation-vs-token-broker]] - source document comparing both approaches
 - [[key-distribution-approach-comparison]] - synthesis comparing Versioned Key Rotation vs Token Broker

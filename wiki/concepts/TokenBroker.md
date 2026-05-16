@@ -20,18 +20,18 @@ A Token Broker is an Apigee reverse proxy that holds partner API credentials (cl
   4. Token broker returns the short-lived token to the client.
   5. Client uses the short-lived token to call partner APIs directly.
 - **DB changes**: Partner client ID, client secret, and token URL columns are **removed** from SHPARTNERCONFIG. A new column `token_broker_url` is added.
-- **Maintenance**: **Zero** — credentials are managed centrally in Apigee KVM; no re-encryption or version rollout needed.
+- **Maintenance**: **Zero** - credentials are managed centrally in Apigee KVM; no re-encryption or version rollout needed.
 - **Security on compromise**: An attacker obtaining a valid short-lived token can only use it within its limited validity period. No further mitigation is required beyond waiting for expiry (or revoking if supported).
 - **Preferred configuration**: Token Broker + ShipIt OAuth2 authentication (option 4 in the design document).
-- **Implementation effort**: Low — requires only integration of a token broker endpoint in Route Finder.
+- **Implementation effort**: Low - requires only integration of a token broker endpoint in Route Finder.
 - **Apigee configuration**: Reverse proxy at `/token-broker/v1` using KeyValueMapOperations to read credentials, AssignMessage to set target URL and retrieve token, cache-control headers to minimize caching risk.
 
 ## Related Links
 
-- [[VersionedKeyRotation]] — alternative approach requiring more maintenance
-- [[ApigeeKvm]] — Apigee Key Value Maps where credentials are stored
-- [[MutualTls]] — one authentication option for the token broker endpoint
-- [[ShipItOAuth2]] — preferred authentication option for the token broker endpoint
-- [[RouteFinder]] — on-premise client that consumes the token broker
-- [[versioned-key-rotation-vs-token-broker]] — source document with full comparison
+- [[VersionedKeyRotation]] - alternative approach requiring more maintenance
+- [[ApigeeKvm]] - Apigee Key Value Maps where credentials are stored
+- [[MutualTls]] - one authentication option for the token broker endpoint
+- [[ShipItOAuth2]] - preferred authentication option for the token broker endpoint
+- [[RouteFinder]] - on-premise client that consumes the token broker
+- [[versioned-key-rotation-vs-token-broker]] - source document with full comparison
 - [[key-distribution-approach-comparison]] - synthesis comparing Token Broker vs Versioned Key Rotation

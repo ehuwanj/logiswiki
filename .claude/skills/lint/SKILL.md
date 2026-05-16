@@ -62,7 +62,8 @@ Scan all wiki `.md` files for mojibake sequences. Use Python via Bash:
 ```bash
 python -c "
 import os, glob
-patterns = ['Ã¢', 'Ã¢']
+# ASCII-safe literals via Unicode escapes to avoid terminal encoding issues.
+patterns = ['\u00c3\u00a2', '\u00c2\u20ac', '\u00e2\u20ac']
 hits = []
 for path in glob.glob('wiki/**/*.md', recursive=True):
     with open(path, 'r', encoding='utf-8') as f:

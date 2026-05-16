@@ -1,5 +1,52 @@
 # Operation Log
 
+## [2026-05-16] query | Route Finder connection to ShipIt
+
+- **Output**: Referenced [[RouteFinder]], [[ShipIt]], [[shipit-route-finder-deployment-comparison]], [[route-finder-datahub-sync]], [[route-finder-wildfly-integration]], [[DataHub]], [[ShipItSynchronizer]]
+- **Coverage**: Explained runtime integration (WAR/JAR), configuration/auth linkage, and data synchronization path via Kafka CDC -> DataHub -> Synchronizer
+
+## [2026-05-16] query | Flyway migration scope (Route Finder vs ShipIt)
+
+- **Output**: Referenced [[FlywayMigration]], [[ShipIt]], [[RouteFinder]], [[shipit-adr14-db-migration-versioning]]
+- **Coverage**: Defined Flyway usage; clarified it is used for ShipIT Farm DB migrations, while Route Finder uses Liquibase
+
+## [2026-05-16] query | Kafka usage in ShipIT and Smart Routing
+
+- **Output**: Referenced [[KafkaCdc]], [[ShipIt]], [[RouteFinder]], [[AttributeStore]], [[DatahubAssignmentInjector]], [[route-finder-datahub-sync]], [[route-finder-multi-shipit-version-support]], [[shipit-adr4-oauth2-integration]], [[shipit-adr5-attribute-store-sync]], [[shipit-adr7-shipper-assignment-automation]], [[shipit-adr13-farm-user-sync]], [[shipit-adr15-user-sync-mapping]], [[shipit-adr16-usershipper-sync-rework]], [[shipit-as-user-sync-adr]]
+- **Coverage**: Compared Smart Routing Kafka CDC for Route Finder -> DataHub replication with ShipIT Farm Kafka usage for Attribute Store user and shipper synchronization, topic design, filtering, and Kafka Streams joins via datahub-assignment-injector
+
+## [2026-05-16] lint | Health check + auto-fixes
+
+- **Result**: 0 dead links, 0 orphan pages, 0 knowledge conflicts, 0 encoding errors; index fully synced
+- **Fixes applied**:
+  - Replaced em-dash (`—`) with ` - ` in 13 pages (10 concept pages + 3 source pages from 2026-05-10 ingest)
+  - Added missing link: [[ShipItFarm]] -> [[OmaroMicroservice]] (bidirectional)
+  - Added missing link: [[OmaroMicroservice]] -> [[AmazonEKS]]
+  - Added backlinks from [[AttributeStore]] and [[ShipItSynchronizer]] to [[shipit-adr15-user-sync-mapping]]
+  - Added backlink from [[AttributeStore]] to [[shipit-adr8-fpcs-parameters]]
+  - Added backlink from [[ShipIt]] to [[shipit-crypto-jasypt-to-javax]]
+  - Created new concept page [[DatahubAssignmentInjector]]; added to [[index.md]]
+  - Linked [[DatahubAssignmentInjector]] from [[AttributeStore]], [[DataHub]], [[ShipItSynchronizer]], [[ShipItFarm]], [[shipit-adr16-usershipper-sync-rework]], [[shipit-as-user-sync-adr]]
+- **Conflicts**: None
+
+## [2026-05-16] ingest | No-op; all raw files unchanged
+
+- **Changes**: None
+- **Manifest**: Processed 0 files, skipped 27 unchanged (3 routing skipped, 24 shipit/routing active), missing 0, pruned 0
+- **Conflicts**: None
+
+## [2026-05-16] ingest | Ingested 24 new raw files (routing + ShipIT ADR domain)
+
+- **Changes**:
+  - Added sources: [[route-finder-wildfly-integration]], [[route-finder-multi-shipit-version-support]], [[route-finder-shipit-semver-guide]], [[partner-credential-db-migration-analysis]]
+  - Added sources: [[shipit-adr1-database-technology]], [[shipit-adr2-backend-server-technology]], [[shipit-adr3-synchronizer-deployment]], [[shipit-adr4-oauth2-integration]], [[shipit-adr5-attribute-store-sync]], [[shipit-adr6-cluster-scheduled-jobs]], [[shipit-adr7-shipper-assignment-automation]], [[shipit-adr8-fpcs-parameters]], [[shipit-adr9-dev-strategy]], [[shipit-adr10-farm-release-cycles]], [[shipit-adr11-oas-approach]], [[shipit-adr12-sandbox-user-config]], [[shipit-adr13-farm-user-sync]], [[shipit-adr14-db-migration-versioning]], [[shipit-adr15-user-sync-mapping]], [[shipit-adr16-usershipper-sync-rework]], [[shipit-adr17-attributestore-multi-apis]]
+  - Added sources: [[shipit-omaro-replaces-lobster]], [[shipit-as-user-sync-adr]], [[shipit-crypto-jasypt-to-javax]]
+  - Added concepts: [[ShipItFarm]], [[AttributeStore]], [[AuroraServerless]], [[AmazonEKS]], [[SemanticVersioning]], [[DatabaseSchemaEvolution]], [[PartnerCredentialStorage]], [[QuartzScheduler]], [[OmaroMicroservice]], [[FarmReleaseCycle]], [[FlywayMigration]]
+  - Updated existing concepts: [[ShipIt]], [[WildFlyWarDeployment]], [[RouteFinder]], [[DataHub]], [[ShipItSynchronizer]]
+  - Updated [[index.md]] with new Sources sections (CrossBorder+ RTG + ShipIT Farm ADRs) and new Concepts section (ShipIT Farm - Infrastructure)
+- **Manifest**: Processed 24 new files, skipped 3 unchanged (routing/), missing 0, pruned 0
+- **Conflicts**: None
+
 ## [2026-05-14] reorganize | Moved raw files into raw/routing/ subfolder
 - **Changes**: Moved 3 raw files from raw/ to raw/routing/; updated raw_path in [[ingest-manifest]]; updated sources frontmatter in 3 source pages and 16 concept pages (19 files total)
 - **Files moved**: Data Synchronization for Route Finder to DataHub, ShipIt Integration Route Finder Deployment Comparison, Versioned Key Rotation vs Token Broker

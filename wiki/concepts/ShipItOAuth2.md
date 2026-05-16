@@ -1,4 +1,4 @@
----
+﻿---
 title: "ShipIt OAuth2"
 type: concept
 tags: [security, oauth2, authentication, shipit, crossborder-plus]
@@ -30,8 +30,8 @@ ShipIt OAuth2 is the OAuth 2.0 authentication service already embedded in the Sh
 
 ## Related Links
 
-- [[TokenBroker]] — uses ShipIt OAuth2 as the preferred authentication approach
-- [[VersionedKeyRotation]] — can also use ShipIt OAuth2 for the key distribution API
-- [[MutualTls]] — alternative authentication approach
-- [[ShipIt]] — system that owns and operates the OAuth2 service
-- [[versioned-key-rotation-vs-token-broker]] — source document describing ShipIt OAuth2 integration
+- [[TokenBroker]] - uses ShipIt OAuth2 as the preferred authentication approach
+- [[VersionedKeyRotation]] - can also use ShipIt OAuth2 for the key distribution API
+- [[MutualTls]] - alternative authentication approach
+- [[ShipIt]] - system that owns and operates the OAuth2 service
+- [[versioned-key-rotation-vs-token-broker]] - source document describing ShipIt OAuth2 integration

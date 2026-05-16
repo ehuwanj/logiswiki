@@ -21,13 +21,13 @@ Apigee Key Value Maps (KVMs) are a runtime configuration storage mechanism withi
   - *Versioned Key Rotation*: Stores encryption key per version (e.g., `PARTNER_ENCRYPTION_KEY_V1`, `PARTNER_ENCRYPTION_KEY_V2`).
   - *Token Broker*: Stores partner client ID, client secret, and token URL.
 - **Security**: Values stored in KVM are only accessible to API proxies in the same Apigee environment; not exposed to external callers directly.
-- **No-target proxy pattern**: For key distribution, a no-target Apigee proxy reads the KVM and returns the value as the HTTP response — the request is handled entirely within Apigee without hitting a backend.
+- **No-target proxy pattern**: For key distribution, a no-target Apigee proxy reads the KVM and returns the value as the HTTP response - the request is handled entirely within Apigee without hitting a backend.
 - **Environments**: KVM entries exist per Apigee environment (dev, stage, prod); separate entries are configured per environment.
 
 ## Related Links
 
-- [[VersionedKeyRotation]] — uses Apigee KVM to store versioned encryption keys
-- [[TokenBroker]] — uses Apigee KVM to store partner OAuth2 credentials
-- [[MutualTls]] — authentication used to protect KVM-backed API proxies
-- [[ShipItOAuth2]] — alternative authentication for KVM-backed proxies
-- [[versioned-key-rotation-vs-token-broker]] — source document describing KVM usage
+- [[VersionedKeyRotation]] - uses Apigee KVM to store versioned encryption keys
+- [[TokenBroker]] - uses Apigee KVM to store partner OAuth2 credentials
+- [[MutualTls]] - authentication used to protect KVM-backed API proxies
+- [[ShipItOAuth2]] - alternative authentication for KVM-backed proxies
+- [[versioned-key-rotation-vs-token-broker]] - source document describing KVM usage

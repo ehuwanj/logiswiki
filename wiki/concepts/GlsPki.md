@@ -1,4 +1,4 @@
----
+﻿---
 title: "GLS PKI"
 type: concept
 tags: [pki, security, certificates, gls-infrastructure]
@@ -30,5 +30,5 @@ The GLS Group Public Key Infrastructure (PKI) is the internal certificate author
 
 ## Related Links
 
-- [[MutualTls]] — mTLS authentication using GLS PKI certificates
-- [[versioned-key-rotation-vs-token-broker]] — recommends GLS PKI for Apigee mTLS
+- [[MutualTls]] - mTLS authentication using GLS PKI certificates
+- [[versioned-key-rotation-vs-token-broker]] - recommends GLS PKI for Apigee mTLS

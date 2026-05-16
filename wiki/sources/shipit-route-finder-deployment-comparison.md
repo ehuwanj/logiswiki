@@ -35,9 +35,9 @@ This DRAFT design document (ISRS-21427, under Epic ISRS-19336) compares two depl
 
 ## Related Links
 
-- [[RouteFinder]] — Route Finder (RTG) component details
-- [[ShipIt]] — ShipIt on-premise system
-- [[WildFlyWarDeployment]] — WAR deployment model
-- [[StandaloneJarDeployment]] — JAR deployment model
-- [[versioned-key-rotation-vs-token-broker]] — credential management approach for on-premise deployment
-- [[route-finder-datahub-sync]] — database synchronization for Route Finder
+- [[RouteFinder]] - Route Finder (RTG) component details
+- [[ShipIt]] - ShipIt on-premise system
+- [[WildFlyWarDeployment]] - WAR deployment model
+- [[StandaloneJarDeployment]] - JAR deployment model
+- [[versioned-key-rotation-vs-token-broker]] - credential management approach for on-premise deployment
+- [[route-finder-datahub-sync]] - database synchronization for Route Finder

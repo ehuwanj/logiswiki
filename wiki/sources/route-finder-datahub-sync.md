@@ -40,10 +40,10 @@ This DRAFT design document (ISRS-21177, under Epic ISRS-19336) defines how Route
 
 ## Related Links
 
-- [[DataHub]] — ShipIt DataHub for data distribution
-- [[KafkaCdc]] — Kafka CDC synchronization pattern
-- [[DebeziumConnector]] — Debezium CDC source connector
-- [[Liquibase]] — Route Finder database migration framework
-- [[ShipIt]] — ShipIt on-premise system
-- [[RouteFinder]] — Route Finder (RTG) component
-- [[shipit-route-finder-deployment-comparison]] — deployment model for Route Finder with ShipIt
+- [[DataHub]] - ShipIt DataHub for data distribution
+- [[KafkaCdc]] - Kafka CDC synchronization pattern
+- [[DebeziumConnector]] - Debezium CDC source connector
+- [[Liquibase]] - Route Finder database migration framework
+- [[ShipIt]] - ShipIt on-premise system
+- [[RouteFinder]] - Route Finder (RTG) component
+- [[shipit-route-finder-deployment-comparison]] - deployment model for Route Finder with ShipIt

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Liquibase"
 type: concept
 tags: [liquibase, database, migrations, route-finder, crossborder-plus]
@@ -13,8 +13,8 @@ Liquibase is an open-source database migration framework used by Route Finder (R
 ## Key Information
 
 - **Usage in Route Finder**: Two Liquibase projects manage RTG database migrations:
-  - `xbp-rtg-rtg-liquibase` — manages the `routing` schema
-  - `xbp-rtg-rtg-unique-import` — manages the `rtguniqueimport` schema
+  - `xbp-rtg-rtg-liquibase` - manages the `routing` schema
+  - `xbp-rtg-rtg-unique-import` - manages the `rtguniqueimport` schema
 - **ShipIt migration format**: ShipIt uses a single versioned SQL file per release (e.g., `schema_update_fpcs_X.Y.Z[.W]__description.sql`), managed by the Component Updater. A new versioned SQL file for Route Finder (`schema_update_rtg_X.Y.Z.sql`) must be created to bridge the two systems.
 - **Schemas covered**: The new migration file should cover `cron`, `routing`, and `rtguniqueimport` schemas (the three required for Route Finder execution).
 - **Backward compatibility requirement**: Since three ShipIt versions of Route Finder share one RTG database, all schema changes must be additive. Breaking changes (column removal, renaming, type changes, primary key modifications) are not permitted while older versions are active.
@@ -22,8 +22,8 @@ Liquibase is an open-source database migration framework used by Route Finder (R
 
 ## Related Links
 
-- [[RouteFinder]] — application whose DB migrations are managed by Liquibase
-- [[DebeziumConnector]] — reads the database structure created by Liquibase migrations
-- [[KafkaCdc]] — synchronization pipeline built on the database structure
-- [[DataHub]] — receives migrations via versioned SQL files
-- [[route-finder-datahub-sync]] — source document describing the migration approach
+- [[RouteFinder]] - application whose DB migrations are managed by Liquibase
+- [[DebeziumConnector]] - reads the database structure created by Liquibase migrations
+- [[KafkaCdc]] - synchronization pipeline built on the database structure
+- [[DataHub]] - receives migrations via versioned SQL files
+- [[route-finder-datahub-sync]] - source document describing the migration approach

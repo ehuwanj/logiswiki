@@ -13,7 +13,7 @@ Kafka CDC (Change Data Capture) is the preferred approach for synchronizing Rout
 ## Key Information
 
 - **Why Kafka over REST**: REST API-based sync was considered but deprecated due to higher implementation effort, memory/performance risks for large tables, and additional complexity in both Routing and ShipIt.
-- **Preferred message format**: **Avro** — binary encoding, smaller message sizes, lower network overhead, better throughput; already used in GLS Kafka cluster. JSON is technically supported but not preferred.
+- **Preferred message format**: **Avro** - binary encoding, smaller message sizes, lower network overhead, better throughput; already used in GLS Kafka cluster. JSON is technically supported but not preferred.
 - **Schema Registry**: Kafka topic key and value schemas automatically generated and maintained in the Schema Registry by Debezium. Topic key is derived from the table primary key.
 - **Compacted topics**: New Kafka compacted topics are created per table to synchronize routing tables from RTG DB to DataHub DB. Compacted topics ensure the latest value per key is always retained.
 - **Tables synchronized**: Tables in `routing` and `rtguniqueimport` schemas (e.g., `routing.shpartnerconfig`, `rtguniqueimport.tblocation`, `rtguniqueimport.tbtour`, etc.).
@@ -23,9 +23,9 @@ Kafka CDC (Change Data Capture) is the preferred approach for synchronizing Rout
 
 ## Related Links
 
-- [[DebeziumConnector]] — CDC source connector used to capture RTG DB changes
-- [[DataHub]] — destination of the synchronized data
-- [[RouteFinder]] — source database being synchronized
-- [[ShipItSynchronizer]] — downstream consumer of DataHub data
-- [[Liquibase]] — manages RTG database migrations that feed the CDC pipeline
-- [[route-finder-datahub-sync]] — source document with full synchronization design
+- [[DebeziumConnector]] - CDC source connector used to capture RTG DB changes
+- [[DataHub]] - destination of the synchronized data
+- [[RouteFinder]] - source database being synchronized
+- [[ShipItSynchronizer]] - downstream consumer of DataHub data
+- [[Liquibase]] - manages RTG database migrations that feed the CDC pipeline
+- [[route-finder-datahub-sync]] - source document with full synchronization design

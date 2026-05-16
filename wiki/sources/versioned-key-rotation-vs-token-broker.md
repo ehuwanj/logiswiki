@@ -30,11 +30,11 @@ This DRAFT design document (ISRS-23427, under Epic ISRS-19336) compares two appr
 
 ## Related Links
 
-- [[VersionedKeyRotation]] — encryption key versioning approach
-- [[TokenBroker]] — Apigee token broker pattern
-- [[ApigeeKvm]] — Apigee Key Value Maps for credential storage
-- [[MutualTls]] — mTLS authentication pattern
-- [[ShipItOAuth2]] — ShipIt OAuth2 authentication
-- [[RouteFinder]] — Route Finder (RTG) component
-- [[ShipIt]] — ShipIt on-premise shipping system
-- [[GlsPki]] — GLS PKI for client certificate issuance
+- [[VersionedKeyRotation]] - encryption key versioning approach
+- [[TokenBroker]] - Apigee token broker pattern
+- [[ApigeeKvm]] - Apigee Key Value Maps for credential storage
+- [[MutualTls]] - mTLS authentication pattern
+- [[ShipItOAuth2]] - ShipIt OAuth2 authentication
+- [[RouteFinder]] - Route Finder (RTG) component
+- [[ShipIt]] - ShipIt on-premise shipping system
+- [[GlsPki]] - GLS PKI for client certificate issuance
