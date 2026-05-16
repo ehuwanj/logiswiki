@@ -12,13 +12,12 @@ You are maintaining an **LLM Wiki** (Obsidian knowledge base). The `raw/` direct
 
 **Directory structure conventions:**
 - `raw/` - source documents (read-only, single source of truth)
-- `raw/archived/` - optional legacy folder; do not use for active ingest
 - `wiki/` - compiled wiki pages (concepts, sources, syntheses)
 - `wiki/ingest-manifest.md` - incremental ingest state for skip decisions
 
 ## Trigger Logic
 
-1. **User runs `/ingest`**: Scan files under `raw/` (excluding `raw/archived/`) and process only sources marked new or changed by the manifest.
+1. **User runs `/ingest`**: Scan files under `raw/` and process only sources marked new or changed by the manifest.
 2. **User runs `/ingest <path>`**: Process only the specified source file if it is new or changed; otherwise skip unless the user explicitly requests reingest.
 3. **User runs `/ingest --prune`**: Run ingest plus safe prune cleanup for manifest entries whose `raw_path` no longer exists.
 4. **Implicit trigger**: When the user asks to ingest, import, or add material into the wiki, execute ingest automatically.
@@ -36,9 +35,9 @@ For each pending source file, execute the following steps strictly in order:
 ### Step 0: Manifest-Based Candidate Selection
 
 1. Read `wiki/ingest-manifest.md` if it exists; if missing, create it with an empty table.
-2. List candidate files under `raw/` excluding `raw/archived/`. Use Bash:
+2. List candidate files under `raw/`. Use Bash:
    ```bash
-   find raw/ -type f ! -path '*/archived/*'
+   find raw/ -type f
    ```
 3. Build a lightweight fingerprint per file using size + modified time. Use Python via Bash:
    ```bash
@@ -237,7 +236,6 @@ When a conflict between new and existing knowledge is found:
 ## Constraints
 
 - Never modify, move, or delete files under `raw/`
-- Exclude `raw/archived/` from normal ingest scans
 - Use manifest state to avoid re-reading unchanged raw files
 - Only run wiki deletions when user explicitly requests `/ingest --prune`
 - All wiki pages must include a `## Related Links` section — isolated pages are not acceptable
