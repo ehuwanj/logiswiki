@@ -54,15 +54,4 @@ if (missing.length === 0) {
   dv.list(missing.sort((a, b) => a.file.name.localeCompare(b.file.name)).map(p => p.file.link));
 }
 
-dv.header(3, `Invalid first tag (${invalid.length})`);
-if (invalid.length === 0) {
-  dv.paragraph("- None");
-} else {
-  dv.table(
-    ["Page", "First Tag"],
-    invalid
-      .sort((a, b) => a.page.file.name.localeCompare(b.page.file.name))
-      .map(x => [x.page.file.link, x.firstTag])
-  );
-}
 ```
