@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR7: Remove Shipper Assignments from Control Center"
 type: source
-tags: [source, shipit, farm, shipper, datahub, adr]
+tags: [shipit, farm, shipper, datahub, adr]
 sources:
   - "[raw/shipit/ADR7 Remove shipper assignments from Control Center - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200843123/ADR7+Remove+shipper+assignments+from+Control+Center)"
 last_updated: 2026-05-16

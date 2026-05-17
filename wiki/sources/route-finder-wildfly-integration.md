@@ -1,7 +1,7 @@
 ---
 title: "ShipIt Integration: Making Route Finder ready for WildFly"
 type: source
-tags: [source, routing, wildfly, deployment, route-finder]
+tags: [routing, wildfly, deployment, route-finder]
 sources:
   - "[raw/routing/ShipIt Integration Making Route Finder ready for WildFly.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166063292/ShipIt+Integration+Making+Route+Finder+ready+for+WildFly)"
 last_updated: 2026-05-16

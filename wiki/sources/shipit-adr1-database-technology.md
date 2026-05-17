@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR1: Database Technology"
 type: source
-tags: [source, shipit, farm, database, aurora, adr]
+tags: [shipit, farm, database, aurora, adr]
 sources:
   - "[raw/shipit/ADR1 Database technology - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200844181/ADR1+Database+technology)"
 last_updated: 2026-05-16

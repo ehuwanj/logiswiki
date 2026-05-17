@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR15: User Sync - Which Information to Take from Which Place"
 type: source
-tags: [source, shipit, farm, user-sync, kafka, synchronizer, adr]
+tags: [shipit, farm, user-sync, kafka, synchronizer, adr]
 sources:
   - "[raw/shipit/ADR15 User sync - which information to take from which place - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200932333/ADR15+User+sync+-+which+information+to+take+from+which+place)"
 last_updated: 2026-05-16

@@ -1,7 +1,7 @@
 ---
 title: "ingest-manifest"
 type: source
-tags: [operations, ingest-manifest]
+tags: [devops, operations, ingest-manifest]
 sources: [wiki/log.md]
 last_updated: 2026-05-16
 ---

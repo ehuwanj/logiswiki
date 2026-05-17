@@ -1,12 +1,7 @@
-﻿---
-title: "Route Finder DataHub Sync"
+---
+title: Route Finder DataHub Sync
 type: source
-tags:
-  - kafka
-  - cdc
-  - datahub
-  - database
-  - crossborder-plus
+tags: [routing, kafka, cdc, datahub, database, crossborder-plus]
 sources:
   - "[raw/routing/Data Synchronization for Route Finder to DataHub - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166060827/Data+Synchronization+for+Route+Finder+to+DataHub)"
 ---

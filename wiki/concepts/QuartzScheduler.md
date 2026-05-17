@@ -1,7 +1,7 @@
 ---
 title: "Quartz Scheduler"
 type: concept
-tags: [quartz, scheduling, shipit, cluster, jobs]
+tags: [shipit, quartz, scheduling, cluster, jobs]
 sources:
   - "[raw/shipit/ADR6 Make scheduled jobs cluster ready - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200842639/ADR6+Make+scheduled+jobs+cluster+ready)"
 last_updated: 2026-05-16

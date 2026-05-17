@@ -1,7 +1,7 @@
 ---
 title: "Route Finder"
 type: concept
-tags: [route-finder, rtg, smart-routing, crossborder-plus, gls, spring-boot, postgresql]
+tags: [routing, route-finder, rtg, smart-routing, crossborder-plus, gls, spring-boot, postgresql]
 sources:
   - "[raw/routing/Versioned Key Rotation vs Token Broker for Secure Access to the Partner API - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/452821144/Versioned+Key+Rotation+vs+Token+Broker+for+Secure+Access+to+the+Partner+API)"
   - "[raw/routing/ShipIt Integration Route Finder Deployment Comparison - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166064255/ShipIt+Integration+Route+Finder+Deployment+Comparison)"

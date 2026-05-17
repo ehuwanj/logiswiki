@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR5: Sync Attribute Store Users to Farm"
 type: source
-tags: [source, shipit, farm, kafka, attribute-store, adr]
+tags: [shipit, farm, kafka, attribute-store, adr]
 sources:
   - "[raw/shipit/ADR5 Sync Attribute Store users to Farm - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200842845/ADR5+Sync+Attribute+Store+users+to+Farm)"
 last_updated: 2026-05-16

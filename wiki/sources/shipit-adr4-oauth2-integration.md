@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR4: Integrate OAuth 2.0 Authentication in ShipIT Farm"
 type: source
-tags: [source, shipit, farm, oauth2, authentication, adr]
+tags: [shipit, farm, oauth2, authentication, adr]
 sources:
   - "[raw/shipit/ADR4 Integrate OAuth 2.0 authentication in ShipIT Farm - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200903369/ADR4+Integrate+OAuth+2.0+authentication+in+ShipIT+Farm)"
 last_updated: 2026-05-16

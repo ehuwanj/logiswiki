@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR10: Shorter Release Cycles for FARM"
 type: source
-tags: [source, shipit, farm, release-management, branching, adr]
+tags: [shipit, farm, release-management, branching, adr]
 sources:
   - "[raw/shipit/ADR10 Shorter Release Cycles for FARM - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200848792/ADR10+Shorter+Release+Cycles+for+FARM)"
 last_updated: 2026-05-16

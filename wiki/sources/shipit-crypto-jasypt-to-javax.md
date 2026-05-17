@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR: Cryptography - Replace jasypt with javax.crypto"
 type: source
-tags: [source, shipit, cryptography, security, jasypt, bouncycastle, adr]
+tags: [shipit, cryptography, security, jasypt, bouncycastle, adr]
 sources:
   - "[raw/shipit/ShipIt-ADR3 Cryptography - replace jasypt with javax.crypto - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200838377/ADR3+Cryptography+-+replace+jasypt+with+javax.crypto)"
 last_updated: 2026-05-16

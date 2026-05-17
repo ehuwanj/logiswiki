@@ -1,7 +1,7 @@
 ﻿---
 title: "Versioned Key Rotation vs Token Broker"
 type: source
-tags: [source, security, api, encryption, shipit, crossborder-plus]
+tags: [security, api, encryption, shipit, crossborder-plus]
 sources: ["[raw/routing/Versioned Key Rotation vs Token Broker for Secure Access to the Partner API - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/452821144/Versioned+Key+Rotation+vs+Token+Broker+for+Secure+Access+to+the+Partner+API)"]
 last_updated: 2026-05-10
 ---

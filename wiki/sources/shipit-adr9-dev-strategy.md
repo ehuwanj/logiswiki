@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR9: Bringing ShipIT and Farm Development Closer Together"
 type: source
-tags: [source, shipit, farm, development-strategy, codebase, adr]
+tags: [shipit, farm, development-strategy, codebase, adr]
 sources:
   - "[raw/shipit/ADR9 Bringing ShipIT and Farm development closer together - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200847081/ADR9+Bringing+ShipIT+and+Farm+development+closer+together)"
 last_updated: 2026-05-16

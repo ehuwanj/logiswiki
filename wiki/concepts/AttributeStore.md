@@ -1,7 +1,7 @@
 ---
 title: "Attribute Store"
 type: concept
-tags: [attribute-store, gpp, user-management, kafka, microservice]
+tags: [kafka, attribute-store, gpp, user-management, microservice]
 sources:
   - "[raw/shipit/ADR4 Integrate OAuth 2.0 authentication in ShipIT Farm - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200903369/ADR4+Integrate+OAuth+2.0+authentication+in+ShipIT+Farm)"
   - "[raw/shipit/ADR5 Sync Attribute Store users to Farm - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200842845/ADR5+Sync+Attribute+Store+users+to+Farm)"

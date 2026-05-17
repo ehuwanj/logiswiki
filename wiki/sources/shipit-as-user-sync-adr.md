@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR: AS User/Shipper Assignment Synchronization into ShipIT"
 type: source
-tags: [source, shipit, farm, user-sync, datahub-assignment-injector, adr]
+tags: [shipit, farm, user-sync, datahub-assignment-injector, adr]
 sources:
   - "[raw/shipit/ShipIt-ADR2 AS UserShipper assignment synchronization into ShipIT - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200837788/ADR2+AS+User+Shipper+assignment+synchronization+into+ShipIT)"
 last_updated: 2026-05-16

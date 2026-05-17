@@ -1,12 +1,10 @@
 ﻿---
 title: "Apigee KVM"
 type: concept
-tags:
-  - apigee
-  - security
-  - credential-storage
+tags: [security, apigee, credential-storage]
 sources:
   - "[raw/routing/Versioned Key Rotation vs Token Broker for Secure Access to the Partner API - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/452821144/Versioned+Key+Rotation+vs+Token+Broker+for+Secure+Access+to+the+Partner+API)"
+last_updated: 2026-05-17
 ---
 
 ## Definition

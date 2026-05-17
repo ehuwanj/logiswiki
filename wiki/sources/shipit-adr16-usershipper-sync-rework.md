@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR16: Rework User/Shipper Sync"
 type: source
-tags: [source, shipit, farm, user-sync, datahub, kafka-streams, adr]
+tags: [shipit, farm, user-sync, datahub, kafka-streams, adr]
 sources:
   - "[raw/shipit/ADR16 Rework user/shipper sync - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200945248/ADR16+Rework+user+shipper+sync)"
 last_updated: 2026-05-16

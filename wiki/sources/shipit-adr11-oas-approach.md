@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR11: REST OAS Design or Code First Approach"
 type: source
-tags: [source, shipit, farm, rest, oas, openapi, adr]
+tags: [shipit, farm, rest, oas, openapi, adr]
 sources:
   - "[raw/shipit/ADR11 REST OAS design or code first approach - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200845870/ADR11+REST+OAS+design+or+code+first+approach)"
 last_updated: 2026-05-16

@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR12: Configuration of Users in Sandbox"
 type: source
-tags: [source, shipit, farm, sandbox, user-management, adr]
+tags: [shipit, farm, sandbox, user-management, adr]
 sources:
   - "[raw/shipit/ADR12 Configuration of users in Sandbox - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200844761/ADR12+Configuration+of+users+in+Sandbox)"
 last_updated: 2026-05-16

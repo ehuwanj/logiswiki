@@ -1,7 +1,7 @@
 ﻿---
 title: "ShipIt Route Finder Deployment Comparison"
 type: source
-tags: [source, shipit, route-finder, deployment, wildfly, crossborder-plus]
+tags: [shipit, route-finder, deployment, wildfly, crossborder-plus]
 sources: ["[raw/routing/ShipIt Integration Route Finder Deployment Comparison - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166064255/ShipIt+Integration+Route+Finder+Deployment+Comparison)"]
 last_updated: 2026-05-14
 ---

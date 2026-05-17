@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR17: Attributestore Multi APIs"
 type: source
-tags: [source, shipit, attribute-store, microservice, gpp, adr]
+tags: [shipit, attribute-store, microservice, gpp, adr]
 sources:
   - "[raw/shipit/ADR17 Attributestore multi APIs - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200953481/ADR17+Attributestore+multi+APIs)"
 last_updated: 2026-05-16

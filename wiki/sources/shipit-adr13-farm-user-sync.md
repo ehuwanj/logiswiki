@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR13: Only Sync Farm Users from Attribute Store"
 type: source
-tags: [source, shipit, farm, user-sync, kafka, adr]
+tags: [shipit, farm, user-sync, kafka, adr]
 sources:
   - "[raw/shipit/ADR13 Only sync Farm users from attribute-store - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200846022/ADR13+Only+sync+Farm+users+from+attribute-store)"
 last_updated: 2026-05-16

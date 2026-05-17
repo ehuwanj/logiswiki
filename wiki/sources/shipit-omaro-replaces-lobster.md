@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR: Omaro to Replace Lobster"
 type: source
-tags: [source, shipit, omaro, lobster, kafka, parcel-data, adr]
+tags: [shipit, omaro, lobster, kafka, parcel-data, adr]
 sources:
   - "[raw/shipit/ShipIt-ADR1 Omaro to replace Lobster - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200837784/ADR1+Omaro+to+replace+Lobster)"
 last_updated: 2026-05-16

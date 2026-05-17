@@ -1,7 +1,7 @@
 ---
 title: "Support Multiple ShipIt versions in Route Finder"
 type: source
-tags: [source, routing, versioning, compatibility, route-finder]
+tags: [routing, versioning, compatibility, route-finder]
 sources:
   - "[raw/routing/Support Multiple ShipIt versions in Route Finder - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166061448/Support+Multiple+ShipIt+versions+in+Route+Finder)"
 last_updated: 2026-05-16

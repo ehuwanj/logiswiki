@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR3: Deploy Synchronizer for Webbackend Farm"
 type: source
-tags: [source, shipit, farm, synchronizer, kafka, adr]
+tags: [shipit, farm, synchronizer, kafka, adr]
 sources:
   - "[raw/shipit/ADR3 Deploy Synchronizer for Webbackend Farm - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200844071/ADR3+Deploy+Synchronizer+for+Webbackend+Farm)"
 last_updated: 2026-05-16

@@ -1,7 +1,7 @@
 ---
 title: "WildFly WAR Deployment"
 type: concept
-tags: [wildfly, deployment, war, shipit, route-finder, java, jakarta-ee]
+tags: [shipit, wildfly, deployment, war, route-finder, java, jakarta-ee]
 sources:
   - "[raw/routing/ShipIt Integration Route Finder Deployment Comparison - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166064255/ShipIt+Integration+Route+Finder+Deployment+Comparison)"
   - "[raw/routing/WildFly-ShipIT Integration Analysis - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166063571/WildFly-ShipIT+Integration+Analysis)"

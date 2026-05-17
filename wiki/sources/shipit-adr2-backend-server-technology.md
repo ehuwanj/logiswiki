@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR2: Backend Server Technology"
 type: source
-tags: [source, shipit, farm, kubernetes, eks, adr]
+tags: [shipit, farm, kubernetes, eks, adr]
 sources:
   - "[raw/shipit/ADR2 Backend server technology - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200844191/ADR2+Backend+server+technology)"
 last_updated: 2026-05-16

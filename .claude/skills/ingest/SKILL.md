@@ -90,7 +90,7 @@ Create a Markdown file in `wiki/sources/`:
 ---
 title: "Human-Readable Source Title"
 type: source
-tags: [source, raw-material]
+tags: [domain-tag, topic-tag]
 sources:
   - "[raw/xxx.md](https://original-source-url)"
 last_updated: YYYY-MM-DD
@@ -110,6 +110,10 @@ last_updated: YYYY-MM-DD
 ```
 
 Use kebab-case for filenames: `knowledge-source-slug.md`
+
+Tag formatting rule: keep `tags` as a single-line YAML array with comma+space separators (example: `tags: [security, apigee, credential-storage]`). Do not emit block-list tag syntax.
+Tag semantics rule: tags should describe the content domain/topics of the page. Do not add a tag that merely repeats the page `type` value, such as `source`, `concept`, or `synthesis`.
+Tag priority rule: the first tag must be the page's primary domain and must be one of `routing`, `shipit`, `security`, `devops`, `aws`, or `kafka`. If one of these tags is already present, move the most appropriate domain tag to the front. If none is present, add the best-fitting domain tag as the first tag.
 
 ### Step 4: Knowledge Networking (Concept Pages)
 
@@ -241,5 +245,8 @@ When a conflict between new and existing knowledge is found:
 - All wiki pages must include a `## Related Links` section — isolated pages are not acceptable
 - Write all content in English
 - Concept names use TitleCase; sources and syntheses use kebab-case
+- Keep `tags` in single-line YAML array format with comma+space separators (for consistency with most existing wiki pages)
+- Do not include a tag that duplicates the page `type`; for source pages, omit the redundant `source` tag
+- The first tag must be one of: `routing`, `shipit`, `security`, `devops`, `aws`, `kafka`
 - **ASCII-only characters in wiki content**: use ` - ` (not `—`), `->` (not `→`), `-` (not `–`). Non-ASCII chars cause double-encoded mojibake on disk on Windows — see CLAUDE.md Character Safety Rule.
 - Use Bash tool with POSIX commands for file system operations (Claude is started from Git Bash); use Python via Bash for body-text edits in files with non-ASCII content; fall back to PowerShell tool if Bash is unavailable

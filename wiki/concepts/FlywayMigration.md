@@ -1,7 +1,7 @@
 ---
 title: "Flyway Migration"
 type: concept
-tags: [flyway, database, migration, shipit, farm]
+tags: [shipit, flyway, database, migration, farm]
 sources:
   - "[raw/shipit/ADR14 Manage db migrations for long and short releases - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200846921/ADR14+Manage+db+migrations+for+long+and+short+releases)"
 last_updated: 2026-05-16

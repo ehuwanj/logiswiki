@@ -1,15 +1,10 @@
 ﻿---
 title: "Debezium Connector"
 type: concept
-tags:
-  - debezium
-  - cdc
-  - kafka
-  - data-sync
-  - postgresql
-  - crossborder-plus
+tags: [kafka, debezium, cdc, data-sync, postgresql, crossborder-plus]
 sources:
   - "[raw/routing/Data Synchronization for Route Finder to DataHub - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166060827/Data+Synchronization+for+Route+Finder+to+DataHub)"
+last_updated: 2026-05-17
 ---
 
 ## Definition

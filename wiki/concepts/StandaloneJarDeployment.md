@@ -1,7 +1,7 @@
 ﻿---
 title: "Standalone JAR Deployment"
 type: concept
-tags: [deployment, jar, shipit, route-finder, java, windows-service]
+tags: [shipit, deployment, jar, route-finder, java, windows-service]
 sources: ["[raw/routing/ShipIt Integration Route Finder Deployment Comparison - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166064255/ShipIt+Integration+Route+Finder+Deployment+Comparison)"]
 last_updated: 2026-05-10
 ---

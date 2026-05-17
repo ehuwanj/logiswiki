@@ -1,7 +1,7 @@
 ---
 title: "Analysis: Moving Partner Client Configuration from Parameter Store to Database"
 type: source
-tags: [source, routing, security, encryption, credentials]
+tags: [routing, security, encryption, credentials]
 sources:
   - "[raw/routing/Analysis Moving Partner Client Configuration From Parameter Store To Database - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166060753/Analysis+Moving+Partner+Client+Configuration+From+Parameter+Store+To+Database)"
 last_updated: 2026-05-16

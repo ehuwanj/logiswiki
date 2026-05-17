@@ -1,5 +1,44 @@
 # Operation Log
 
+## [2026-05-17] lint | Applied autofix for missing last_updated
+
+- **Changes**: Added `last_updated: 2026-05-17` to [[ApigeeKvm]] and [[DebeziumConnector]]
+- **Result**: Frontmatter completeness issue from prior lint report resolved
+
+## [2026-05-17] lint | Wiki health audit
+
+- **Result**: 0 dead links, 0 orphan pages, 0 unresolved knowledge conflicts, 0 encoding errors, 0 index drift; all 55 knowledge pages have Related Links
+- **Minor issues**: 2 pages missing `last_updated` frontmatter ([[ApigeeKvm]], [[DebeziumConnector]])
+- **Coverage**: No strong missing concept candidates; no material freshness drift detected
+
+## [2026-05-17] lint | Normalized first tag to allowed domain taxonomy
+
+- **Changes**:
+  - Reordered first tags on 8 pages so the leading tag is one of `routing`, `shipit`, `security`, `devops`, `aws`, `kafka`
+  - Added missing leading domain tags to [[DatabaseSchemaEvolution]], [[Liquibase]], [[RouteFinder]], and [[ingest-manifest]]
+  - Updated ingest skill guidance to require an allowed domain tag in first position for generated pages
+- **Result**: All tagged wiki pages now start with an allowed domain tag
+
+## [2026-05-17] lint | Audited redundant type tags in concepts and syntheses
+
+- **Changes**: None
+- **Result**: No pages under `wiki/concepts/` or `wiki/syntheses/` used redundant `concept` or `synthesis` tags; existing ingest guidance already covers prevention
+
+## [2026-05-17] lint | Removed redundant source tags from source pages
+
+- **Changes**:
+  - Removed the redundant `source` tag from 27 files under [[wiki/sources]]; source identity remains defined by `type: source`
+  - Updated ingest skill guidance and templates so generated source pages use only content-based tags
+- **Result**: Source frontmatter tags are now domain/topic-only and aligned with the page schema
+
+## [2026-05-17] lint | Normalized tags frontmatter format
+
+- **Changes**:
+  - Updated [[ApigeeKvm]] tags to `tags: [security, apigee, credential-storage]`
+  - Normalized [[DebeziumConnector]] tags from block-list style to inline array format
+  - Updated ingest skill guidance to require single-line `tags` arrays for new pages
+- **Result**: Tag formatting aligned with existing concepts/sources convention; no content semantics changed
+
 ## [2026-05-16] query | Route Finder connection to ShipIt
 
 - **Output**: Referenced [[RouteFinder]], [[ShipIt]], [[shipit-route-finder-deployment-comparison]], [[route-finder-datahub-sync]], [[route-finder-wildfly-integration]], [[DataHub]], [[ShipItSynchronizer]]

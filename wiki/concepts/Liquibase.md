@@ -1,7 +1,7 @@
 ﻿---
 title: "Liquibase"
 type: concept
-tags: [liquibase, database, migrations, route-finder, crossborder-plus]
+tags: [routing, liquibase, database, migrations, route-finder, crossborder-plus]
 sources: ["[raw/routing/Data Synchronization for Route Finder to DataHub - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166060827/Data+Synchronization+for+Route+Finder+to+DataHub)"]
 last_updated: 2026-05-10
 ---

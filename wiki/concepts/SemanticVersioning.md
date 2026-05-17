@@ -1,7 +1,7 @@
 ---
 title: "Semantic Versioning"
 type: concept
-tags: [versioning, semver, release-management, routing, shipit]
+tags: [routing, versioning, semver, release-management, shipit]
 sources:
   - "[raw/routing/Semantic Versioning Guide for Route Finder and ShipIT - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166057945/Semantic+Versioning+Guide+for+Route+Finder+and+ShipIT)"
   - "[raw/routing/Support Multiple ShipIt versions in Route Finder - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166061448/Support+Multiple+ShipIt+versions+in+Route+Finder)"

@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR8: Handle Specific FPCS Parameters Without Shipper Context"
 type: source
-tags: [source, shipit, farm, parameters, configuration, adr]
+tags: [shipit, farm, parameters, configuration, adr]
 sources:
   - "[raw/shipit/ADR8 Handle specific FPCS parameters without shipper context - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200843125/ADR8+Handle+specific+FPCS+parameters+without+shipper+context)"
 last_updated: 2026-05-16

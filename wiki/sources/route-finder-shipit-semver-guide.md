@@ -1,7 +1,7 @@
 ---
 title: "Semantic Versioning Guide for Route Finder and ShipIT"
 type: source
-tags: [source, routing, versioning, semver, release-management]
+tags: [routing, versioning, semver, release-management]
 sources:
   - "[raw/routing/Semantic Versioning Guide for Route Finder and ShipIT - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166057945/Semantic+Versioning+Guide+for+Route+Finder+and+ShipIT)"
 last_updated: 2026-05-16

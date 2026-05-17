@@ -1,7 +1,7 @@
 ---
 title: "ShipIT ADR6: Make Scheduled Jobs Cluster Ready"
 type: source
-tags: [source, shipit, farm, quartz, scheduling, adr]
+tags: [shipit, farm, quartz, scheduling, adr]
 sources:
   - "[raw/shipit/ADR6 Make scheduled jobs cluster ready - ShipIT.md](https://gls-group.atlassian.net/wiki/spaces/FPCS/pages/200842639/ADR6+Make+scheduled+jobs+cluster+ready)"
 last_updated: 2026-05-16
