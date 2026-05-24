@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Kafka CDC"
 type: concept
 tags: [kafka, cdc, data-sync, debezium, crossborder-plus, datahub]

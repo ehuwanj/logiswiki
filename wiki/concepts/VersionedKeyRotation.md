@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Versioned Key Rotation"
 type: concept
 tags: [security, encryption, key-management, apigee, crossborder-plus]
@@ -17,9 +17,9 @@ Versioned Key Rotation is a security pattern for managing encryption keys across
 - **Key distribution API**: A no-target Apigee proxy at `/partner-key/v1` (version-specific path) reads the KVM entry and returns the key. Protected by mTLS or ShipIt OAuth2.
 - **DB changes**: `SHPARTNERCONFIG` table gets two new columns: `key_version` (integer) and `key_url` (URL of the version-specific endpoint).
 - **Key history table**: Tracks version, URL, valid_from, valid_to, status (active/deprecated/expired). Supports operational tracking and controlled lifecycle.
-- **Rotation workflow**: New key in KVM → new version-specific URL → re-encrypt all partner credentials → synchronize to DataHub DB and customer DBs.
+- **Rotation workflow**: New key in KVM -> new version-specific URL -> re-encrypt all partner credentials -> synchronize to DataHub DB and customer DBs.
 - **Grace period**: ~3 months of overlap during which both old and new key endpoints remain valid, allowing gradual customer synchronization. After grace period, old key endpoint is disabled.
-- **Compromise response**: Rotate key and publish new API immediately → disable old API → re-encrypt credentials → synchronize across customers.
+- **Compromise response**: Rotate key and publish new API immediately -> disable old API -> re-encrypt credentials -> synchronize across customers.
 - **Maintenance effort**: Medium - requires key version management, re-encryption, API version rollout, overlap-period management, and DB synchronization.
 - **Security note**: Any caller with a valid client certificate or OAuth2 token can retrieve the raw encryption key; the distribution API must be treated as highly sensitive.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Liquibase"
 type: concept
 tags: [routing, liquibase, database, migrations, route-finder, crossborder-plus]

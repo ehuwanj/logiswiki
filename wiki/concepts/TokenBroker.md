@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Token Broker"
 type: concept
 tags: [security, authentication, apigee, oauth2, crossborder-plus]

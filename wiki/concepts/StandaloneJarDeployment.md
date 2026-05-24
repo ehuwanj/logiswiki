@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Standalone JAR Deployment"
 type: concept
 tags: [shipit, deployment, jar, route-finder, java, windows-service]

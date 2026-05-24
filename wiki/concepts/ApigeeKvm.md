@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Apigee KVM"
 type: concept
 tags: [security, apigee, credential-storage]

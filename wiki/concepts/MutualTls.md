@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Mutual TLS"
 type: concept
 tags: [security, tls, authentication, certificates, apigee]

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "DataHub"
 type: concept
 tags: [shipit, datahub, data-sync, database, crossborder-plus, farm, kafka]

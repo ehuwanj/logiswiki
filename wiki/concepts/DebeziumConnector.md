@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Debezium Connector"
 type: concept
 tags: [kafka, debezium, cdc, data-sync, postgresql, crossborder-plus]
@@ -13,7 +13,7 @@ Debezium is an open-source Change Data Capture (CDC) connector that monitors dat
 
 ## Key Information
 
-- **Role**: Debezium is the CDC source connector in the RTG→DataHub synchronization pipeline. It replaces the need for a polling-based or REST-based synchronization approach.
+- **Role**: Debezium is the CDC source connector in the RTG->DataHub synchronization pipeline. It replaces the need for a polling-based or REST-based synchronization approach.
 - **How it works**: Reads PostgreSQL WAL (write-ahead log) to detect INSERT/UPDATE/DELETE events; publishes each change as a Kafka message with the table primary key as the message key.
 - **Topic keys**: Automatically generated from table primary keys; schema registered in Schema Registry.
 - **Initial load**: Debezium connector loads historical data from the source table upon first start, then streams ongoing changes.

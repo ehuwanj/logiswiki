@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Versioned Key Rotation vs Token Broker"
 type: source
 tags: [security, api, encryption, shipit, crossborder-plus]

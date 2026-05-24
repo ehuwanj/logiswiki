@@ -13,7 +13,7 @@ This DRAFT design document (ISRS-21177, under Epic ISRS-19336) defines how Route
 ## Key Claims
 
 - Route Finder uses Liquibase for DB migrations; ShipIt uses versioned SQL files (schema_update_X.Y.Z.sql). A new versioned SQL file (e.g., schema_update_rtg_X.Y.Z.sql) must be created for Route Finder DB changes.
-- Preferred data sync approach: **Kafka CDC via Debezium connector** (source) → Kafka topics → JDBC sink connector → ShipIt DataHub DB → ShipIt Synchronizer → customer backend DB.
+- Preferred data sync approach: **Kafka CDC via Debezium connector** (source) -> Kafka topics -> JDBC sink connector -> ShipIt DataHub DB -> ShipIt Synchronizer -> customer backend DB.
 - REST API-based sync was considered but deprecated: too much implementation effort, memory/performance risks for large tables.
 - Avro format preferred over JSON for Kafka messages (binary encoding, smaller size, already used in GLS Kafka cluster).
 - Required DB schemas for Route Finder execution: `cron` (scheduled jobs), `routing`, `rtguniqueimport`.

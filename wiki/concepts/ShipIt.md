@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ShipIt"
 type: concept
 tags: [shipit, gls, logistics, on-premise, shipping-system, crossborder-plus, farm, eks, aurora]

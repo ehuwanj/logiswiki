@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ShipIt OAuth2"
 type: concept
 tags: [security, oauth2, authentication, shipit, crossborder-plus]
