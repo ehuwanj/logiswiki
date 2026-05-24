@@ -52,5 +52,6 @@ The ShipIT Farm is a cloud-hosted, multi-tenant deployment of the ShipIT backend
 - [[shipit-adr1-database-technology]] - DB technology ADR
 - [[shipit-adr2-backend-server-technology]] - hosting ADR
 - [[shipit-adr4-oauth2-integration]] - OAuth2 integration ADR
+- [[shipit-adr11-oas-approach]] - REST OAS design-first vs code-first ADR (TBD)
 - [[OmaroMicroservice]] - Kafka-to-FTP parcel data service running on EKS
 - [[DatahubAssignmentInjector]] - Kafka Streams component joining AS and DataHub topics for user sync

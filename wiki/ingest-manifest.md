@@ -53,3 +53,25 @@ This file tracks ingest state so unchanged raw files can be skipped.
 | raw/shipit/ShipIt-ADR1 Omaro to replace Lobster - ShipIT.md | 5241 / 2026-05-16T17:46:34 | 2026-05-16 | wiki/sources/shipit-omaro-replaces-lobster.md | active |
 | raw/shipit/ShipIt-ADR2 AS UserShipper assignment synchronization into ShipIT - ShipIT.md | 5972 / 2026-05-16T17:46:54 | 2026-05-16 | wiki/sources/shipit-as-user-sync-adr.md | active |
 | raw/shipit/ShipIt-ADR3 Cryptography - replace jasypt with javax.crypto - ShipIT.md | 3946 / 2026-05-16T17:46:54 | 2026-05-16 | wiki/sources/shipit-crypto-jasypt-to-javax.md | active |
+| raw/devops/Github Actions - Onboarding Applications Guide - CrossBorder+.md | 38410 / 2026-05-24T14:54:31 | 2026-05-24 | wiki/sources/github-actions-onboarding-guide.md | active |
+| raw/devops/Github Actions - Blueprint Workflow Definition - CrossBorder+.md | 6083 / 2026-05-24T14:59:17 | 2026-05-24 | wiki/sources/github-actions-blueprint-workflow.md | active |
+| raw/devops/Github Action - Java Gradle  Docker build and push - CrossBorder+.md | 8001 / 2026-05-24T15:00:18 | 2026-05-24 | wiki/sources/github-actions-gradle-docker-push.md | active |
+| raw/devops/Github Actions Build Workflow - CrossBorder+.md | 31920 / 2026-05-24T15:00:52 | 2026-05-24 | wiki/sources/github-actions-build-workflow-concept.md | active |
+| raw/devops/Github Actions Build Workflow - CrossBorder+ 1.md | missing | 2026-05-24 | wiki/sources/github-actions-build-workflow-concept.md | missing |
+| raw/devops/Github Actions Reusable Workflow Versioning - CrossBorder+.md | 15102 / 2026-05-24T15:02:22 | 2026-05-24 | wiki/sources/github-actions-reusable-workflow-versioning.md | active |
+| raw/devops/GitHub Actions Workflow Dynamic Elements - CrossBorder+.md | 9925 / 2026-05-24T15:03:25 | 2026-05-24 | wiki/sources/github-actions-workflow-dynamic-elements.md | active |
+| raw/routing/Analysis Unique Tour Management - CrossBorder+.md | 3476 / 2026-05-24T15:14:50 | 2026-05-24 | wiki/sources/analysis-unique-tour-management.md | active |
+| raw/routing/Analysis Long Haul Routing - CrossBorder+.md | 8594 / 2026-05-24T15:16:44 | 2026-05-24 | wiki/sources/analysis-long-haul-routing.md | active |
+| raw/routing/Business Object Model Leg Based Routing - CrossBorder+.md | 20555 / 2026-05-24T15:17:24 | 2026-05-24 | wiki/sources/business-object-model-leg-based-routing.md | active |
+| raw/routing/Network for leg based routing - CrossBorder+.md | 24637 / 2026-05-24T15:18:20 | 2026-05-24 | wiki/sources/network-leg-based-routing.md | active |
+| raw/routing/Shipper Specific Routing - CrossBorder+.md | 15378 / 2026-05-24T15:59:23 | 2026-05-24 | wiki/sources/shipper-specific-routing-overview.md | active |
+| raw/routing/Long Haul Routing - National - International - Partners - CrossBorder+.md | 3262 / 2026-05-24T15:20:14 | 2026-05-24 | wiki/sources/long-haul-routing-national-international-partners.md | active |
+| raw/routing/Shipper Specific Routing in Route-Finder - CrossBorder+.md | 5132 / 2026-05-24T15:21:39 | 2026-05-24 | wiki/sources/shipper-specific-routing-route-finder.md | active |
+| raw/routing/Definition and Evaluation of Short Haul Routing Rule Sets - CrossBorder+.md | 5843 / 2026-05-24T15:22:35 | 2026-05-24 | wiki/sources/definition-evaluation-short-haul-routing-rule-sets.md | active |
+| raw/routing/Nearest zipcode match (comparison between Unique, ShipIt and RTG) - CrossBorder+.md | 21648 / 2026-05-24T15:23:35 | 2026-05-24 | wiki/sources/nearest-zipcode-match-comparison.md | active |
+| raw/routing/Nemonic Codes - CrossBorder+.md | 4117 / 2026-05-24T15:23:40 | 2026-05-24 | wiki/sources/nemonic-codes-routing.md | active |
+| raw/routing/Partner Pre-selection - CrossBorder+.md | 2420 / 2026-05-24T15:25:32 | 2026-05-24 | wiki/sources/partner-preselection.md | active |
+| raw/routing/Data Modell Routing Solution - CrossBorder+.md | 16338 / 2026-05-24T15:25:55 | 2026-05-24 | wiki/sources/data-model-routing-solution.md | active |
+| raw/routing/Definition of Rules - How can logic be modelled in rules - CrossBorder+.md | 23563 / 2026-05-24T15:27:42 | 2026-05-24 | wiki/sources/definition-of-rules-modeling-logic.md | active |
+| raw/routing/Migration Concept - CrossBorder+.md | 3332 / 2026-05-24T15:29:45 | 2026-05-24 | wiki/sources/migration-concept-routing.md | active |
+| raw/2026-05-24.md | 0 / 2026-05-24T15:30:32 | 2026-05-24 |  | active |

@@ -41,6 +41,10 @@ Semantic Versioning (SemVer 2.0.0) is the versioning standard used for Route Fin
 **Tool:**
 - Gradle plugin: `pl.allegro.tech.build.axion-release` version 1.18.15
 
+## Cross-Domain Note
+
+SemVer is also adopted for the GLS XB+ shared GitHub Actions workflows in [[XbpDevopsTools]]; that domain layers a floating-major-tag scheme on top (e.g., `v1`) and automates releases via [[SemanticReleaseTool]]. See [[github-actions-reusable-workflow-versioning]] for that variant.
+
 ## Related Links
 
 - [[RouteFinder]] - uses SemVer for release management
@@ -49,3 +53,6 @@ Semantic Versioning (SemVer 2.0.0) is the versioning standard used for Route Fin
 - [[route-finder-shipit-semver-guide]] - versioning guide source
 - [[route-finder-multi-shipit-version-support]] - multi-version support using SemVer
 - [[FarmReleaseCycle]] - Farm-specific release cycle
+- [[XbpDevopsTools]] - SemVer also used here for shared workflows
+- [[SemanticReleaseTool]] - tool that automates SemVer + floating major tag
+- [[github-actions-reusable-workflow-versioning]] - GitHub Actions variant

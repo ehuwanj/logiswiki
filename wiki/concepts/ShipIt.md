@@ -65,3 +65,9 @@ ShipIt is a GLS shipping management system that runs in multiple deployment mode
 - [[shipit-adr2-backend-server-technology]] - Farm backend hosting decision
 - [[shipit-adr10-farm-release-cycles]] - Farm release cycle decision
 - [[shipit-crypto-jasypt-to-javax]] - jasypt to javax.crypto encryption migration
+- [[UniQue]] - legacy backbone delegating-routing relationship
+- [[NemonicCode]] - label code emitted by Route Finder, consumed by ShipIt
+- [[NearestZipcodeMatch]] - delegates routing/zipcode handling to UniQue
+- [[Eircode]] - replicates Irish virtual codes locally
+- [[nearest-zipcode-match-comparison]] - zipcode behavior comparison source
+- [[nemonic-codes-routing]] - Spain label code source

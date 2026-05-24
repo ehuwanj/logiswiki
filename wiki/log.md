@@ -1,5 +1,45 @@
 # Operation Log
 
+## [2026-05-24] lint | Health check after 2026-05-24 ingest
+
+- **Result**: Index consistency clean (0 dead entries, 0 unsynced); 89 knowledge pages all have Related Links; 0 knowledge conflicts; 0 mojibake; 0 stale pages.
+- **Yellow**: 1 orphan source page [[shipit-adr11-oas-approach]] (registered in index but no inbound concept-page links); 30 dead wikilinks in log.md are historical append-only references to pruned content (no fix required).
+- **Red**: 1 dead link from a knowledge page: `wiki/concepts/LongHaulRouting.md` references missing `[[RuleBasedRouting]]`.
+- **Proposed fixes** (awaiting user confirmation): (1) remove dead `[[RuleBasedRouting]]` bullet from [[LongHaulRouting]]; (2) add a `[[shipit-adr11-oas-approach]]` backlink from [[ShipIt]] / [[ShipItFarm]].
+- **Fixes applied** (user confirmed): (1) removed `[[RuleBasedRouting]]` bullet from [[LongHaulRouting]]; (2) added `[[shipit-adr11-oas-approach]]` backlink under Related Links in [[ShipItFarm]]. Post-fix verification: 0 dead links from knowledge pages; orphan resolved (1 inbound concept link).
+
+## [2026-05-24] ingest | Re-ingest Shipper Specific Routing (raw file now populated)
+
+- **Changes**:
+  - Created source page [[shipper-specific-routing-overview]] covering ISRS-14952 (current ShipIt overlay, monthly config files, RDS AWS `cellbasedrouting` DB, Business Cases 1 and 2, Smart Routing implementation plan).
+  - Updated concept page [[ShipperSpecificRouting]] with: current-state ShipIt overlay model, monthly config-file shape, distribution path (Sven Hock -> Christian Kuhn -> GeoAPI team), data evaluation snapshot (66 contacts, 698 locations), Business Case 1 example (Fuhrmann Einzelhandel, R46/R50), Business Case 2 example (expondo, R80 bundle of ~85 finals), Viking Office rule example with OSC R87, and 4-step Smart Routing implementation plan.
+  - Updated [[index.md]] with the new source entry.
+  - Updated manifest row for `raw/routing/Shipper Specific Routing - CrossBorder+.md`: fingerprint `15378 / 2026-05-24T15:59:23`, source_page `wiki/sources/shipper-specific-routing-overview.md`, status `active`.
+- **Manifest**: Processed 1 file (the previously empty file now populated), skipped 27 unchanged, missing 1 (the deleted duplicate from prior run remains missing), pruned 0.
+- **Conflicts**: None. The new source extends the Route Finder design source ([[shipper-specific-routing-route-finder]]) with the business-process and current-state context; both sources back the same concept page now.
+
+## [2026-05-24] ingest | Detect deleted duplicate raw file
+
+- **Changes**: Detected `raw/devops/Github Actions Build Workflow - CrossBorder+ 1.md` no longer exists.
+  - Marked its manifest row as `missing` (fingerprint also set to `missing`).
+  - Removed the corresponding entry from the `sources` array in [[github-actions-build-workflow-concept]] (the other raw path remains; the wiki page is retained).
+- **Manifest**: Processed 0 files, skipped 27 unchanged, missing 1 (the deleted duplicate), pruned 0.
+- **Conflicts**: None.
+- **Notes**: This was a non-destructive ingest detection; no `--prune` was requested, so the wiki source page was kept (still backed by the remaining non-duplicate raw file).
+
+## [2026-05-24] ingest | DevOps GitHub Actions + Smart Routing rule-/leg-based design
+
+- **Changes**: Added 19 source pages, 31 concept pages.
+  - DevOps sources: [[github-actions-onboarding-guide]], [[github-actions-blueprint-workflow]], [[github-actions-build-workflow-concept]], [[github-actions-gradle-docker-push]], [[github-actions-reusable-workflow-versioning]], [[github-actions-workflow-dynamic-elements]].
+  - DevOps concepts: [[GithubActions]], [[ReusableWorkflow]], [[CompositeAction]], [[XbpDevopsTools]], [[XbpReusableCi]], [[SonarQube]], [[SonatypeNexus]], [[AwsEcr]], [[Jib]], [[SemanticReleaseTool]].
+  - Routing sources: [[analysis-long-haul-routing]], [[analysis-unique-tour-management]], [[definition-evaluation-short-haul-routing-rule-sets]], [[business-object-model-leg-based-routing]], [[network-leg-based-routing]], [[long-haul-routing-national-international-partners]], [[definition-of-rules-modeling-logic]], [[data-model-routing-solution]], [[migration-concept-routing]], [[shipper-specific-routing-route-finder]], [[nemonic-codes-routing]], [[partner-preselection]], [[nearest-zipcode-match-comparison]].
+  - Routing concepts: [[LongHaulRouting]], [[ShortHaulRouting]], [[LegBasedRouting]], [[RoutingRule]], [[RoutingRuleSet]], [[RoutingRuleSetEnvelope]], [[RuleVersioning]], [[TourLeg]], [[LineHaul]], [[Neo4jRouting]], [[ShipperSpecificRouting]], [[PartnerPreselection]], [[NemonicCode]], [[OutboundSortingFlag]], [[NearestZipcodeMatch]], [[TBZIPFORMAT]], [[Eircode]], [[TourManagement]], [[RoutingMatrix]], [[UniQue]], [[MdmLocations]].
+  - Updated [[RouteFinder]], [[ShipIt]], [[SemanticVersioning]] with cross-domain links.
+  - Updated [[index.md]] with new "CrossBorder+ Smart Routing - Routing Logic" sources, "DevOps - GitHub Actions" sources, and matching concept categories.
+- **Manifest**: Processed 21 new files (devops: 7 incl. 1 duplicate file; routing: 14 design/analysis), skipped 28 unchanged, 2 empty raw files marked active.
+- **Conflicts**: None. Two raw files were 0 bytes (`raw/2026-05-24.md` and `raw/routing/Shipper Specific Routing - CrossBorder+.md`) and were recorded as active in the manifest but produced no wiki content.
+- **Notes**: `Github Actions Build Workflow - CrossBorder+ 1.md` is a byte-identical duplicate of `Github Actions Build Workflow - CrossBorder+.md`; both raw paths are recorded in the manifest and both point to the same source page [[github-actions-build-workflow-concept]] (its `sources` array lists both raw paths).
+
 ## [2026-05-16] query | Route Finder connection to ShipIt
 
 - **Output**: Referenced [[RouteFinder]], [[ShipIt]], [[shipit-route-finder-deployment-comparison]], [[route-finder-datahub-sync]], [[route-finder-wildfly-integration]], [[DataHub]], [[ShipItSynchronizer]]

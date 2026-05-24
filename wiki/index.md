@@ -35,6 +35,32 @@
 - [[shipit-as-user-sync-adr]] - ShipIT-ADR2: datahub-assignment-injector design; Kafka Streams joining AS and DataHub topics.
 - [[shipit-crypto-jasypt-to-javax]] - ShipIT-ADR3: replace jasypt/BouncyCastle with javax.crypto for ShipIT encryption.
 
+### CrossBorder+ Smart Routing - Routing Logic
+
+- [[analysis-long-haul-routing]] - definitions of LH routing, OSF, route-rule-set; legacy UniQue TBROUTE/TBROUTELINE model and Routing Matrix Excel context.
+- [[analysis-unique-tour-management]] - two configuration paths (GUI cron + manual FTP) for UniQue tour management; prerequisite MDU file for new locations.
+- [[long-haul-routing-national-international-partners]] - routeType definitions; rename proposal `INTERNATIONAL/NATIONAL` -> `INTERNATIONAL_LH_MGMT/PARTNER_LH_MGMT/SYSTEM`; evaluation order.
+- [[definition-evaluation-short-haul-routing-rule-sets]] - mandatory zipCodeId/geoCellId; ZipCodeRuleSetRelation pre-filter index; activeFrom/activeTo bounds.
+- [[definition-of-rules-modeling-logic]] - depot-level rule modeling: priority + array inputs preferred; SH and LH worked examples.
+- [[data-model-routing-solution]] - core rule sets + envelopes; activeFrom/activeTo versioning; in-work versions for atomic release; cache and replication rules.
+- [[business-object-model-leg-based-routing]] - depots + tour legs + line hauls; required MDM attributes; partner-level weight constraints; Q&A.
+- [[network-leg-based-routing]] - bootstrap network from TBLHTOURLEG (international) + DE Routing Matrix + artificial main-location-to-HUB.
+- [[nearest-zipcode-match-comparison]] - UniQue/ShipIt/RTG nearest-zipcode behavior; TBZIPFORMAT semantics; default-zipcode fallbacks; Eircode virtual codes.
+- [[shipper-specific-routing-overview]] - ISRS-14952 end-to-end SSR analysis; current ShipIt overlay; monthly config files; Business Cases 1 (Change Starting Point) and 2 (Bundle Routing); Smart Routing implementation plan.
+- [[shipper-specific-routing-route-finder]] - Route Finder rule design; change-origin and bundle-routing business cases; leg-based subgraph as fallback for rule-based limitations.
+- [[partner-preselection]] - hidden-from-consumer partner routing; weight as differentiator.
+- [[nemonic-codes-routing]] - GLS Spain three-digit label codes; atomic-replace API; sender-zip + receiver-country lookup.
+- [[migration-concept-routing]] - three-stream migration (rule-based, partner API, leg-based on Neo4j).
+
+### DevOps - GitHub Actions
+
+- [[github-actions-onboarding-guide]] - team onboarding for the XB+ Reusable CI workflow; secrets, inputs, branch behavior.
+- [[github-actions-blueprint-workflow]] - architectural blueprint for GitHub Actions adoption; composite actions and reusable workflows.
+- [[github-actions-build-workflow-concept]] - Jenkins-to-GitHub Actions migration concept (ISRS-15737); audit summary and reusable-workflow template.
+- [[github-actions-gradle-docker-push]] - Gradle / Jib Docker build-and-push reusable workflow; branch-to-account mapping.
+- [[github-actions-reusable-workflow-versioning]] - SemVer + floating major tag; semantic-release; dedicated shared-workflow repo.
+- [[github-actions-workflow-dynamic-elements]] - dynamic-input design (ISRS-15738) for one workflow covering java/node/python/go.
+
 ## Concepts
 
 ### GLS Infrastructure & Security
@@ -78,6 +104,43 @@
 - [[QuartzScheduler]] - 20+ periodic jobs in ShipIT; Farm uses single-node pod for non-parallelizable DB-writing jobs.
 - [[OmaroMicroservice]] - replaces Lobster_data platform; Kafka -> TRN file -> FTP for parcel data to Unique; runs on EKS.
 - [[DatahubAssignmentInjector]] - Kafka Streams app joining AS and DataHub Debezium topics; writes to DataHub user management tables; replaces as-data-provider + shipper-assignment-injector.
+
+### CrossBorder+ Smart Routing - Routing Logic
+
+- [[LongHaulRouting]] - depot-to-depot routing; OSF emission; rule-based and leg-based implementations.
+- [[ShortHaulRouting]] - tour + final location identification by zipcode/geoCellId; default zipcode fallback; hosts partner pre-selection.
+- [[LegBasedRouting]] - dynamic LH approach: directed graph of tour legs, shortest-path on Neo4j.
+- [[RoutingRule]] - ordered rule with input criteria + output values; priority-based modeling preferred.
+- [[RoutingRuleSet]] - ordered list of rules per (location, type); versioned activeFrom/activeTo.
+- [[RoutingRuleSetEnvelope]] - top-level grouping of co-versioned LH rule sets for consistent routing; cache + replication coordination.
+- [[RuleVersioning]] - activeFrom/activeTo mechanism; in-work versions for atomic multi-rule release.
+- [[TourLeg]] - directed edge in leg-based network; sourced from UniQue TBLHTOURLEG.
+- [[LineHaul]] - operational implementation of a tour leg (vehicle, cost, schedule).
+- [[Neo4jRouting]] - graph database for leg-based routing and shipper-specific subgraphs.
+- [[OutboundSortingFlag]] - label-emitted code identifying the last sorting depot; OSF/OSC.
+- [[ShipperSpecificRouting]] - shipper-aware origin or bundle routing; identity gap (customerID vs contactID).
+- [[PartnerPreselection]] - hidden-from-consumer partner choice during short haul routing.
+- [[NemonicCode]] - GLS Spain three-digit label code emitted during long haul routing.
+- [[NearestZipcodeMatch]] - prefix-based nearest zipcode resolution; comparison across UniQue/ShipIt/RTG.
+- [[TBZIPFORMAT]] - UniQue per-country zip format table; ZIPFORMAT/MINZIPLENGTH/MAXZIPLENGTH/ZIPTOURLENGTH.
+- [[Eircode]] - Irish post-county virtual codes (WICKASH etc.); maintained in TBCONVERT convtype 50236.
+- [[TourManagement]] - UniQue Office tour management; TBTOURM -> TBTOUR replication.
+- [[RoutingMatrix]] - legacy UniQue routing Excel (~9M entries for ~3,000 locations).
+- [[UniQue]] - GLS legacy backbone for routing/tours/locations being replaced.
+- [[MdmLocations]] - new master data for depots and activities; Kafka-fed and locally cached.
+
+### DevOps - GitHub Actions
+
+- [[GithubActions]] - GitHub's CI/CD platform; target for replacing Jenkins at GLS XB+.
+- [[ReusableWorkflow]] - GitHub Actions workflow invoked via `workflow_call` from other workflows.
+- [[CompositeAction]] - YAML-only multi-step action bundle at `.github/actions/<name>/action.yml`.
+- [[XbpDevopsTools]] - the gls-group/xbp-devops-tools repository hosting shared workflows.
+- [[XbpReusableCi]] - the primary `common.reusable-ci.yaml` reusable workflow (java/node/python/go).
+- [[SonarQube]] - on-prem code analysis; requires self-hosted runners.
+- [[SonatypeNexus]] - on-prem artifact repository; immutable maven-releases.
+- [[AwsEcr]] - container registry destinations; account/branch -> secret mapping.
+- [[Jib]] - Gradle plugin for daemonless Java Docker image builds.
+- [[SemanticReleaseTool]] - npm-based release automation for SemVer + floating major tag.
 
 ## Syntheses
 

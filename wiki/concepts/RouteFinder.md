@@ -66,9 +66,36 @@ Route Finder (also called RTG, Real-Time Gateway, or Smart Routing) is a GLS Cro
 - [[DataHub]] - receives synchronized Route Finder data
 - [[KafkaCdc]] - mechanism for syncing Route Finder data to DataHub
 - [[Liquibase]] - Route Finder database migration framework
+- [[ShortHaulRouting]] - short haul routing function
+- [[LongHaulRouting]] - long haul routing function
+- [[LegBasedRouting]] - dynamic LH approach
+- [[RoutingRule]] - core rule abstraction
+- [[RoutingRuleSet]] - core rule-set abstraction
+- [[RoutingRuleSetEnvelope]] - consistent-snapshot grouping
+- [[Neo4jRouting]] - graph tech for leg-based
+- [[ShipperSpecificRouting]] - SSR feature
+- [[PartnerPreselection]] - hidden partner-aware tweak
+- [[NemonicCode]] - Spain label code
+- [[OutboundSortingFlag]] - LH-emitted label code
+- [[NearestZipcodeMatch]] - zipcode resolution
+- [[MdmLocations]] - location master data
+- [[UniQue]] - legacy system being replaced
 - [[shipit-route-finder-deployment-comparison]] - deployment analysis source
 - [[route-finder-datahub-sync]] - data synchronization source
 - [[versioned-key-rotation-vs-token-broker]] - credential management source
 - [[route-finder-multi-shipit-version-support]] - multi-version support analysis
 - [[route-finder-shipit-semver-guide]] - SemVer and branching guide
 - [[partner-credential-db-migration-analysis]] - credential DB migration analysis
+- [[analysis-long-haul-routing]] - LH analysis
+- [[data-model-routing-solution]] - data model + envelopes
+- [[migration-concept-routing]] - migration roadmap
+- [[definition-evaluation-short-haul-routing-rule-sets]] - SH lookup
+- [[definition-of-rules-modeling-logic]] - rule modeling
+- [[long-haul-routing-national-international-partners]] - ruleset typing
+- [[network-leg-based-routing]] - leg-based network bootstrap
+- [[business-object-model-leg-based-routing]] - leg-based data model
+- [[shipper-specific-routing-route-finder]] - SSR design
+- [[partner-preselection]] - partner-pre-selection design
+- [[nemonic-codes-routing]] - Spain nemonic codes
+- [[nearest-zipcode-match-comparison]] - zipcode behavior comparison
+- [[analysis-unique-tour-management]] - tour management context
