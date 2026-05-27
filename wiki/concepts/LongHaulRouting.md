@@ -44,6 +44,7 @@ Long Haul Routing is the routing of parcels between GLS (and partner) depots via
 
 ## Related Links
 
+- [[RuleBasedRouting]] - the rule-set-driven implementation track for LH routing
 - [[ShortHaulRouting]] - paired routing phase that produces origin/final location
 - [[LegBasedRouting]] - dynamic alternative implementation
 - [[OutboundSortingFlag]] - LH output that goes on the label

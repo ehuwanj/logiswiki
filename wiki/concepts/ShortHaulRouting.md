@@ -47,6 +47,7 @@ WHERE zrsr.zipCeId = :zipCodeId
 
 ## Related Links
 
+- [[RuleBasedRouting]] - the routing approach underlying short haul rule evaluation
 - [[LongHaulRouting]] - paired routing phase
 - [[RoutingRuleSet]] - core abstraction
 - [[RoutingRule]] - individual rule

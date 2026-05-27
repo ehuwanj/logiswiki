@@ -1,5 +1,29 @@
 # Operation Log
 
+## [2026-05-27] ingest | Created [[RuleBasedRouting]] concept page
+- **Changes**: Added [[RuleBasedRouting]]; added backlinks in [[RoutingRuleSet]], [[LongHaulRouting]], [[ShortHaulRouting]], [[migration-concept-routing]]; updated [[index.md]].
+- **Conflicts**: None.
+
+## [2026-05-27] ingest | Created [[CertificateSigningRequest]] concept page
+- **Changes**: Added [[CertificateSigningRequest]]; added backlinks in [[GlsPki]] and [[gls-pki-certificate-request-guide]]; updated [[index.md]].
+- **Conflicts**: None.
+
+## [2026-05-27] lint | Full health check
+- **Result**: Zero dead links in knowledge pages, zero conflicts, zero encoding errors, fully synced index. Two concept stubs (`[[CertificateSigningRequest]]`, `[[RuleBasedRouting]]`) referenced from log.md but no pages exist - low priority. `dashboard.md` is an orphan Dataview utility (expected). 112 pages total.
+- **No fixes applied**: wiki is clean; user offered option to create 2 missing concept stubs.
+
+## [2026-05-27] ingest | GLS PKI security documentation (4 new files)
+- **Changes**: Added [[gls-pki-user-manual]], [[gls-pki-certificate-request-guide]], [[gls-pki-certificate-renewal-guide]], [[gls-pki-certificate-revocation-guide]]; updated [[GlsPki]] with renewal/revocation details; updated [[index.md]].
+- **Manifest**: Processed 4 files, skipped 47 unchanged, missing 1 (raw/devops/Github Actions Build Workflow - CrossBorder+ 1.md), pruned 2.
+- **Conflicts**: None.
+
+## [2026-05-24] query | RTG CDC connector creation steps
+
+- **Output**: Read [[route-finder-datahub-sync]], [[KafkaCdc]], [[DebeziumConnector]], [[DatabaseSchemaEvolution]], [[route-finder-multi-shipit-version-support]], [[RouteFinder]], [[Liquibase]]; synthesized into new [[rtg-cdc-connector-creation-playbook]].
+- **Coverage**: 8-step playbook from DB prep through Debezium config, schema-evolution constraints, Jenkins validation, and ShipIt sink handoff. Gaps noted: no concrete connector JSON template; no exhaustive allowlist; no replication slot retirement strategy.
+- **Corrections applied** (user-provided, ticket ISRS-24217): Liquibase repo unification - `xbp-rtg-rtg-unique-import` merged into `xbp-rtg-rtg-liquibase`. Updated [[Liquibase]], [[RouteFinder]], [[route-finder-datahub-sync]] accordingly.
+- **Index**: registered [[rtg-cdc-connector-creation-playbook]] under Syntheses; added bidirectional links from [[KafkaCdc]], [[DebeziumConnector]], [[route-finder-datahub-sync]].
+
 ## [2026-05-24] lint | Full health check + ASCII normalization
 
 - **Result**: Index consistency perfect (0 dead entries, 0 unsynced, 0 miscategorized across 107 knowledge pages); 0 orphans; 0 missing Related Links; 0 unresolved conflicts; 0 mojibake; 0 stale heavily-linked pages.

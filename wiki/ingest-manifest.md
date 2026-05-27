@@ -75,3 +75,7 @@ This file tracks ingest state so unchanged raw files can be skipped.
 | raw/routing/Definition of Rules - How can logic be modelled in rules - CrossBorder+.md | 23563 / 2026-05-24T15:27:42 | 2026-05-24 | wiki/sources/definition-of-rules-modeling-logic.md | active |
 | raw/routing/Migration Concept - CrossBorder+.md | 3332 / 2026-05-24T15:29:45 | 2026-05-24 | wiki/sources/migration-concept-routing.md | active |
 | raw/2026-05-24.md | 0 / 2026-05-24T15:30:32 | 2026-05-24 |  | active |
+| raw/security/GLS PKI User Manual - Information Security Germany.md | 2040 / 2026-05-27T10:19:32 | 2026-05-27 | wiki/sources/gls-pki-user-manual.md | active |
+| raw/security/1. GLS PKI Certificate Request User Guide - Information Security Germany.md | 9720 / 2026-05-27T10:20:14 | 2026-05-27 | wiki/sources/gls-pki-certificate-request-guide.md | active |
+| raw/security/2. GLS PKI Certificate Renewal User Guide - Information Security Germany.md | 2995 / 2026-05-27T10:20:53 | 2026-05-27 | wiki/sources/gls-pki-certificate-renewal-guide.md | active |
+| raw/security/3. GLS PKI Certificate Revocation User Guide - Information Security Germany.md | 3134 / 2026-05-27T10:22:44 | 2026-05-27 | wiki/sources/gls-pki-certificate-revocation-guide.md | active |

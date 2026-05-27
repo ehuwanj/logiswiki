@@ -31,6 +31,7 @@ High-level migration roadmap for the new Route Finder routing engine. Three stre
 
 ## Related Links
 
+- [[RuleBasedRouting]] - rule-based routing stream described in this migration concept
 - [[RouteFinder]] - implementation home
 - [[RoutingRuleSet]] - rule-based core abstraction
 - [[LongHaulRouting]] - LH routing context

@@ -25,7 +25,7 @@ This DRAFT design document (ISRS-21177, under Epic ISRS-19336) defines how Route
 
 ## Evidence and Notes
 
-- Two Liquibase projects: `xbp-rtg-rtg-liquibase` (routing schema) and `xbp-rtg-rtg-unique-import` (rtguniqueimport schema).
+- Single Liquibase project `xbp-rtg-rtg-liquibase` manages both the `routing` and `rtguniqueimport` schemas. The previously separate `xbp-rtg-rtg-unique-import` project was merged into `xbp-rtg-rtg-liquibase` under ticket ISRS-24217.
 - Kafka topic key is auto-generated from table primary key by Debezium; schema registered in Schema Registry.
 - Allowlist in CDC connector prevents newly added tables/columns from being replicated before DataHub schema is ready.
 - XB+ RTG team creates CDC connector when a new ShipIt version build is requested; ShipIt team owns the sink connector and must adapt it for new columns/tables.
@@ -42,3 +42,4 @@ This DRAFT design document (ISRS-21177, under Epic ISRS-19336) defines how Route
 - [[ShipIt]] - ShipIt on-premise system
 - [[RouteFinder]] - Route Finder (RTG) component
 - [[shipit-route-finder-deployment-comparison]] - deployment model for Route Finder with ShipIt
+- [[rtg-cdc-connector-creation-playbook]] - synthesis playbook for creating a new CDC connector per ShipIT release

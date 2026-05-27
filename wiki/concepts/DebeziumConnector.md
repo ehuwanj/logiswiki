@@ -29,3 +29,4 @@ Debezium is an open-source Change Data Capture (CDC) connector that monitors dat
 - [[RouteFinder]] - source PostgreSQL database being monitored
 - [[Liquibase]] - manages the schema of the RTG database that Debezium reads
 - [[route-finder-datahub-sync]] - source document with full connector design
+- [[rtg-cdc-connector-creation-playbook]] - step-by-step playbook for creating a new CDC connector per ShipIT release

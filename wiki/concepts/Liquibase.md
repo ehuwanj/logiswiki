@@ -3,7 +3,7 @@ title: "Liquibase"
 type: concept
 tags: [routing, liquibase, database, migrations, route-finder, crossborder-plus]
 sources: ["[raw/routing/Data Synchronization for Route Finder to DataHub - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166060827/Data+Synchronization+for+Route+Finder+to+DataHub)"]
-last_updated: 2026-05-10
+last_updated: 2026-05-24
 ---
 
 ## Definition
@@ -12,9 +12,9 @@ Liquibase is an open-source database migration framework used by Route Finder (R
 
 ## Key Information
 
-- **Usage in Route Finder**: Two Liquibase projects manage RTG database migrations:
-  - `xbp-rtg-rtg-liquibase` - manages the `routing` schema
-  - `xbp-rtg-rtg-unique-import` - manages the `rtguniqueimport` schema
+- **Usage in Route Finder**: A single Liquibase project manages all RTG database migrations:
+  - `xbp-rtg-rtg-liquibase` - manages both the `routing` and `rtguniqueimport` schemas
+  - Historical note: a second project `xbp-rtg-rtg-unique-import` previously managed the `rtguniqueimport` schema independently; it was merged into `xbp-rtg-rtg-liquibase` under ticket ISRS-24217.
 - **ShipIt migration format**: ShipIt uses a single versioned SQL file per release (e.g., `schema_update_fpcs_X.Y.Z[.W]__description.sql`), managed by the Component Updater. A new versioned SQL file for Route Finder (`schema_update_rtg_X.Y.Z.sql`) must be created to bridge the two systems.
 - **Schemas covered**: The new migration file should cover `cron`, `routing`, and `rtguniqueimport` schemas (the three required for Route Finder execution).
 - **Backward compatibility requirement**: Since three ShipIt versions of Route Finder share one RTG database, all schema changes must be additive. Breaking changes (column removal, renaming, type changes, primary key modifications) are not permitted while older versions are active.

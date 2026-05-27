@@ -9,7 +9,7 @@ sources:
   - "[raw/routing/Analysis Adapting RTG to Support Multiple ShipIT Versions - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166061651/Analysis+Adapting+RTG+to+Support+Multiple+ShipIT+Versions)"
   - "[raw/routing/Semantic Versioning Guide for Route Finder and ShipIT - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166057945/Semantic+Versioning+Guide+for+Route+Finder+and+ShipIT)"
   - "[raw/routing/Analysis Moving Partner Client Configuration From Parameter Store To Database - CrossBorder+.md](https://gls-group.atlassian.net/wiki/spaces/CROS/pages/166060753/Analysis+Moving+Partner+Client+Configuration+From+Parameter+Store+To+Database)"
-last_updated: 2026-05-16
+last_updated: 2026-05-24
 ---
 
 ## Definition
@@ -27,7 +27,7 @@ Route Finder (also called RTG, Real-Time Gateway, or Smart Routing) is a GLS Cro
 
 **Database:**
 - PostgreSQL with schemas: `routing`, `rtguniqueimport`, `cron` (scheduled jobs)
-- DB migrations managed by Liquibase (two projects: xbp-rtg-rtg-liquibase, xbp-rtg-rtg-unique-import)
+- DB migrations managed by Liquibase in a single unified project: `xbp-rtg-rtg-liquibase` (covers both `routing` and `rtguniqueimport` schemas; merged under ticket ISRS-24217 from the formerly separate `xbp-rtg-rtg-unique-import` project)
 - **Multi-version support**: 3 concurrent ShipIT versions must be supported on one RTG database in AWS
 - DB schema evolution rules: additive-only; no column drops/renames while older ShipIT versions are active; deprecation required before removal
 

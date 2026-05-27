@@ -48,6 +48,7 @@ A Routing Rule Set is an ordered list of [[RoutingRule]]s sorted by priority. Ea
 
 ## Related Links
 
+- [[RuleBasedRouting]] - routing approach this rule set is part of
 - [[RoutingRule]] - element
 - [[RoutingRuleSetEnvelope]] - LH consistent snapshot
 - [[RuleVersioning]] - versioning mechanism

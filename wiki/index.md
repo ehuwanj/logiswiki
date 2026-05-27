@@ -52,6 +52,13 @@
 - [[nemonic-codes-routing]] - GLS Spain three-digit label codes; atomic-replace API; sender-zip + receiver-country lookup.
 - [[migration-concept-routing]] - three-stream migration (rule-based, partner API, leg-based on Neo4j).
 
+### Security - GLS PKI
+
+- [[gls-pki-user-manual]] - top-level index for GLS PKI documentation; links to request, renewal, revocation, and FAQ guides.
+- [[gls-pki-certificate-request-guide]] - step-by-step PKI certificate request via CSR Upload or Generate Key on PKI; DNS policy check required.
+- [[gls-pki-certificate-renewal-guide]] - renewal permitted only within 60-day threshold; automated 30-day reminder; reuses request process.
+- [[gls-pki-certificate-revocation-guide]] - revocation via PKI portal; immediate effect; status display updated 19:00 UTC daily; irreversible.
+
 ### DevOps - GitHub Actions
 
 - [[github-actions-onboarding-guide]] - team onboarding for the XB+ Reusable CI workflow; secrets, inputs, branch behavior.
@@ -66,6 +73,7 @@
 ### GLS Infrastructure & Security
 
 - [[GlsPki]] - GLS Group Public Key Infrastructure at pki.gls-group.net; issues internal certificates from GLS root CA.
+- [[CertificateSigningRequest]] - PKCS10-format request submitted to GLS PKI to obtain a signed certificate; requester retains private key.
 - [[MutualTls]] - mutual TLS authentication pattern; used to secure Apigee API proxies; requires GLS PKI client certificates.
 - [[ApigeeKvm]] - Apigee Key Value Maps; encrypted runtime storage for credentials and keys used by API proxies.
 
@@ -107,6 +115,7 @@
 
 ### CrossBorder+ Smart Routing - Routing Logic
 
+- [[RuleBasedRouting]] - core Route Finder approach; ordered rule sets per location evaluated at routing time; covers SH and LH; will be replaced by leg-based for LH.
 - [[LongHaulRouting]] - depot-to-depot routing; OSF emission; rule-based and leg-based implementations.
 - [[ShortHaulRouting]] - tour + final location identification by zipcode/geoCellId; default zipcode fallback; hosts partner pre-selection.
 - [[LegBasedRouting]] - dynamic LH approach: directed graph of tour legs, shortest-path on Neo4j.
@@ -145,3 +154,4 @@
 ## Syntheses
 
 - [[key-distribution-approach-comparison]] - side-by-side comparison of Versioned Key Rotation vs Token Broker; covers DB impact, maintenance, and compromise response; recommends Token Broker + ShipIt OAuth2.
+- [[rtg-cdc-connector-creation-playbook]] - step-by-step playbook for creating a new Debezium CDC connector to sync the RTG database to Kafka / DataHub for a ShipIT release.

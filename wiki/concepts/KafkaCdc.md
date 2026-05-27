@@ -29,3 +29,4 @@ Kafka CDC (Change Data Capture) is the preferred approach for synchronizing Rout
 - [[ShipItSynchronizer]] - downstream consumer of DataHub data
 - [[Liquibase]] - manages RTG database migrations that feed the CDC pipeline
 - [[route-finder-datahub-sync]] - source document with full synchronization design
+- [[rtg-cdc-connector-creation-playbook]] - step-by-step playbook for creating a new CDC connector per ShipIT release
